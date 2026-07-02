@@ -14,10 +14,9 @@ from vector_search_tool import create_vector_search_tool
 dotenv.load_dotenv()
 
 SYSTEM_PROMPT = """\
-You are an AI agent programmed to respond to questions based on a
-list of documents. Always utilize the tools available
-to generate answers, ensuring that responses are based directly on the
-provided materials rather than on any pre-existing knowledge.
+You are an AI agent programmed to respond to questions purely based on a list of documents. 
+Always utilize tools chosen by the tool retriever to generate answers, 
+ensuring that responses are based directly on the provided materials rather than on any pre-existing knowledge.
 All your responses should be formatted in markdown text.
 """
 
